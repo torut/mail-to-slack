@@ -25,3 +25,9 @@ WEBHOCKURL に slack の IncommingWebHock の WebhockURL を設定してくだ�
 alerts: "|mail-to-slack.rb"
 ```
 
+## スクリーンショット
+
+こんなかんじで slack に届きます。
+username のとこがメール送信者になります。
+
+![Screenshot](screenshot.png "Screenshot")
