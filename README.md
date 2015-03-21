@@ -8,6 +8,11 @@ slack の alerts という channel に通知されます。
 1. slack にサインアップ
 2. alerts という channel を作成しておく
 3. Integrations で Incoming WebHocks を設定して WebhockURL をメモっておきます。
+4. gem をインストールします
+```
+  $ gem install mail --no-ri --no-rdoc
+  $ gem install slack-notifier --no-ri --no-rdoc
+```
 
 ## 設定
 
