@@ -21,8 +21,8 @@ $ chmod a+x mail-to-slack.rb
 $ vi mail-to-slack.rb
 ```
 
-WEBHOCKURL に slack の IncommingWebHock の WebhockURL を設定してください。
-
+`WEBHOCKURL` に slack の IncommingWebHock の WebhockURL を設定してください。
+`CHANNEL` にメッセージ送信先の channel を設定してください。
 
 受信したメールを mail-to-slack.rb にパイプするようにします。
 ``/etc/aliases``

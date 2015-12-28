@@ -1,6 +1,7 @@
 #!/usr/local/bin/ruby
 
 WEBHOCKURL = "<IncomingWebHocksURL>"
+CHANNEL = "<SendToChannel>"
 
 require 'mail'
 require 'slack-notifier'
@@ -16,6 +17,6 @@ attachment = {
 attachment['color'] = "good" if mail.subject.index('OK') === 0
 
 notifier = Slack::Notifier.new WEBHOCKURL
-notifier.channel = '#alerts'
+notifier.channel = CHANNEL
 notifier.username = mail.from.first
 notifier.ping '', attachments: [ attachment ]
